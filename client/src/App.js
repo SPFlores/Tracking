@@ -4,11 +4,13 @@ import './App.css'
 
 const App = _ => {
   return (
-    <div className='App'>
-      <p>
-        This is your app man. GG homie.
+    <>
+      <div className='App'>
+        <p>
+          This is your app man. GG homie.
       </p>
-    </div>
+      </div>
+    </>
   )
 }
 
