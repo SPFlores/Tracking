@@ -1,9 +1,22 @@
+import React from 'react'
+
 const Landing = _ => {
   return (
     <>
       <div>
         <p>
-          A wild landing page appears.
+          This is the page you will see when you first come to the app.
+          <br />It should have:
+          <br />
+          -navbar w/ hamburger menu--COMPONENT--static?--mobile responsive
+          <br />
+          -login/sign up buttons (separate from hamburger menu but part of NAVBAR COMPONENT
+          <br />
+          -welcome message--text
+          <br />
+          --what the app does--text
+          <br />
+          -dev info--footer--COMPONENT, spaces from other info on page but dynamic scrolling
         </p>
       </div>
     </>
