@@ -50,11 +50,11 @@ const Navbar = _ => {
     setDrawerState({ ...drawerState, [side]: open })
   }
 
-  // const handleLogOut = _ => {
-  //   localStorage.removeItem('token')
-  //   localStorage.removeItem('user')
-  //   localStorage.removeItem('admin')
-  // }
+  const handleLogOut = _ => {
+    localStorage.removeItem('token')
+    localStorage.removeItem('user')
+    localStorage.removeItem('admin')
+  }
 
   drawerState.sideList = side => (
     <div
@@ -100,8 +100,7 @@ const Navbar = _ => {
               </ListItem>
               <ListItem>
                 <i className='material-icons'>exit_to_app</i>
-                <Link to='/' className='drawerLink'><ListItemText primary='Log Out' />
-                  {/* onClick={handleLogOut} /> */}
+                <Link to='/' className='drawerLink'><ListItemText primary='Log Out' onClick={handleLogOut} />
                 </Link>
               </ListItem>
 
