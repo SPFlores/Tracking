@@ -76,7 +76,7 @@ const Navbar = _ => {
           <ListItemIcon>
             <RestaurantMenu />
           </ListItemIcon>
-          <Link to='/' className='drawerLink'>
+          <Link to='/menu' className='drawerLink'>
             <ListItemText primary='Menu' />
           </Link>
         </ListItem>
