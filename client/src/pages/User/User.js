@@ -2,7 +2,21 @@ import React from 'react'
 
 const User = _ => {
   return (
-    <p>This is a sample user page</p>
+    <div>
+      <p>This is a sample user page. It should have:
+      </p>
+      <ul>
+        <li>name</li>
+        <li>height</li>
+        <li>weight</li>
+        <li>goal weight</li>
+        <li>lost total</li>
+        <li>graph of weight loss?</li>
+        <li>current week's menu</li>
+        <li>favorite foods?</li>
+        <li>planner for next week's menu</li>
+      </ul>
+    </div>
   )
 }
 
