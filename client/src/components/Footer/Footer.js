@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = _ => {
   return (
     <div class='footer-main'>
-      <p>This is a simple footer</p>
+      <p>dev info--footer--COMPONENT, spaces from other info on page but dynamic scrolling</p>
     </div>
   )
 }

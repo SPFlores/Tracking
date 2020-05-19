@@ -12,8 +12,6 @@ const Landing = _ => {
           -welcome message--text
           <br />
           --what the app does--text
-          <br />
-          -dev info--footer--COMPONENT, spaces from other info on page but dynamic scrolling
         </p>
       </div>
     </>
