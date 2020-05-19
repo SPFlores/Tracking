@@ -9,6 +9,7 @@ const User = _ => {
         <li>name</li>
         <li>height</li>
         <li>weight</li>
+        <li>number of cals daily?</li>
         <li>goal weight</li>
         <li>lost total</li>
         <li>graph of weight loss?</li>
