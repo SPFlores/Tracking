@@ -4,10 +4,10 @@ module.exports = (Schema, model) => {
     username: String,
     email: String,
     favorites: Array,
-    weight: Number,
+    current_weight: Number,
     height: String,
     admin: { type: Boolean, default: false }
   })
 
-  return model('User', User)
+  // return model('User', User)
 }

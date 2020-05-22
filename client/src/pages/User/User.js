@@ -16,6 +16,7 @@ const User = _ => {
         <li>current week's menu</li>
         <li>favorite foods?</li>
         <li>planner for next week's menu</li>
+        <li>test</li>
       </ul>
     </div>
   )
