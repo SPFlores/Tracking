@@ -1,5 +1,6 @@
 module.exports = (Schema, model) => {
   const Food = new Schema({
+    id: Number,
     name: String,
     // calories: Number,
     // total_fat: Number,

@@ -14,7 +14,7 @@ module.exports = app => {
   })
 
   app.get('/food/:id', (req, res) => {
-    Food.findOne({ id: req.params.id })
+    Food.findOne({ _id: req.params.id })
       .then(food => res.json(food))
       .catch(e => console.log(e))
   })
@@ -27,13 +27,13 @@ module.exports = app => {
       .catch(e => console.log(e))
   })
 
-  app.get('/watchlist', (req, res) => {
-    Food.find({ watchlist: true })
+  app.get('/favorites', (req, res) => {
+    Food.find({ favorites: true })
       .then(food => res.json(food))
       .catch(e => console.log(e))
   })
-  app.put('/watchlist/:id', (req, res) => {
-    Food.findOneAndUpdate(req.params.id, { watchlist: true })
+  app.put('/favorites/:id', (req, res) => {
+    Food.findOneAndUpdate(req.params.id, { favorites: true })
       .then(_ => res.sendStatus(200))
       .catch(e => console.log(e))
   })
