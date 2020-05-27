@@ -24,5 +24,4 @@ module.exports = app => {
       .then(_ => res.sendStatus(200))
       .catch(e => console.log(e))
   })
-
 }
