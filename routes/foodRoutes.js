@@ -21,9 +21,7 @@ module.exports = app => {
 
   app.put('/food/:id', (req, res) => {
     Food.findOneAndUpdate({ id: req.params.id }, req.body)
-      .then(_ => {
-        res.sendStatus(200)
-      })
+      .then(_ => res.sendStatus(200))
       .catch(e => console.log(e))
   })
 
