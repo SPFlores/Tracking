@@ -32,6 +32,7 @@ module.exports = app => {
       .then(food => res.json(food))
       .catch(e => console.log(e))
   })
+  
   app.put('/favorites/:id', (req, res) => {
     Food.findOneAndUpdate(req.params.id, { favorites: true })
       .then(_ => res.sendStatus(200))

@@ -16,7 +16,7 @@ app.use(express.json())
 
 require('./routes')(app)
 
-require('mongoose').connect('mongodb://localhost/tracking_db', { useNewUrlParser: true, useFindAndModify: true, useCreateIndex: true })
+require('mongoose').connect(process.env.MONGO_LINK, { useNewUrlParser: true, useFindAndModify: true, useCreateIndex: true })
   .then(_ => {
     app.listen(process.env.PORT || 3001)
     console.log('this is working')
